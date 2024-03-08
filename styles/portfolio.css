@@ -3,7 +3,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+.btn-branding {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -24,10 +25,22 @@ p {
   background-color: rgb(83, 83, 87);
   color: rgb(226, 220, 220);
   text-align: center;
-  height: 400px;
+  height: 500px;
   padding: 50px;
 }
 
 a {
   margin: 20px 0;
+}
+
+.btn-branding {
+  background-color: rgb(226, 220, 220);
+  color: rgb(83, 83, 87);
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 60px;
+}
+
+.btn-branding:hover {
+  border: 1px solid rgb(226, 220, 220);
 }
