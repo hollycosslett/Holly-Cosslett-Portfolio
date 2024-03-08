@@ -2,15 +2,14 @@
   --primary-color: rgb(83, 83, 87);
   --secondary-color: rgb(226, 220, 220);
   --heading-font: "Poppins", sans-serif;
-  --text-font: "Playfair Display", serif;
+  --text-color: rgba(37, 37, 39, 0.806);
 }
 
 body {
   background-color: var(--secondary-color);
-  font-family: var(--text-font);
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  color: var(--text-color);
 }
 
 h1,
@@ -48,4 +47,17 @@ a {
 
 .btn-branding:hover {
   border: 1px solid var(--secondary-color);
+}
+
+.main-content-container {
+  padding: 10px;
+}
+.btn-project {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 12px 10px;
+}
+
+.btn-project:hover {
+  border: solid 1px var(--primary-color);
 }
