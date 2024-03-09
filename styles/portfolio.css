@@ -72,6 +72,9 @@ a {
   border: solid 1px var(--primary-color);
 }
 @media (max-width: 767px) {
+  .hero {
+    height: 100%;
+  }
   .hero h1 {
     font-size: 60px;
   }
@@ -99,18 +102,6 @@ a {
   }
   .hero h2 {
     font-size: 15px;
-  }
-}
-
-@media (max-width: 390px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-  .hero h2 {
-    font-size: 12px;
-  }
-  .main-content-container h2 {
-    font-size: 25px;
   }
   .btn-project,
   .btn-branding {
