@@ -109,3 +109,13 @@ a {
     font-size: 10px;
   }
 }
+
+.about {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 90px;
+}
+.about-container {
+  text-align: left;
+  padding: 20px;
+}
