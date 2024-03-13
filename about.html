@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -27,14 +27,14 @@
     <link rel="stylesheet" href="styles/portfolio.css" />
     <title>Holly Cosslett - Front-end Developer</title>
   </head>
-  <body class="about">
+  <body>
     <main>
       <div class="about-container">
         <div class="row">
           <div class="col-6">
-            <h1>About me</h1>
+            <h1 class="mt-4">About me</h1>
             <h2>Front-end Developed based in London</h2>
-            <p>
+            <p class="mt-4 me-5 sizing">
               For anyone who wants to start learning code, this workshop is very
               interesting. You will be challenged with different exercises, and
               everything is well explained, homework and deadlines are good for
@@ -43,7 +43,12 @@
             <a href="" class="btn btn-branding"> My projects</a>
           </div>
           <div class="col-6">
-            <img src="/media/holly.jpg" class="img-fluid rounded" />
+            <div class="img-container">
+              <img
+                src="media/holly.jpg"
+                class="img-fluid rounded shadow holly-image"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,13 +1,13 @@
 :root {
   --primary-color: rgb(62, 63, 66);
   --secondary-color: rgb(255, 255, 255);
-  --heading-font: "Poppins", sans-serif;
+  --text-font: "Raleway", sans-serif;
   --text-color: rgba(37, 37, 39, 0.806);
 }
 
 body {
   background-color: var(--secondary-color);
-  font-family: var(--heading-font);
+  font-family: var(--text-font);
   font-weight: 300;
   color: var(--text-color);
 }
@@ -15,14 +15,18 @@ body {
 h1,
 h2,
 .btn-branding {
-  font-family: var(--heading-font);
+  font-family: var(--text-font);
   font-weight: 400;
   font-style: normal;
 }
 
-h1 {
-  font-size: 75px;
+.hero h1 {
+  font-size: 70px;
   margin: 40px 0 20px 0;
+}
+
+.hero h2 {
+  font-size: 30px;
 }
 
 .hero {
@@ -110,12 +114,35 @@ a {
   }
 }
 
-.about {
+.about-container {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  padding: 90px;
-}
-.about-container {
+  padding: 120px 180px;
   text-align: left;
-  padding: 20px;
+}
+
+.about-container h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-container h2 {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.about-container p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.sizing {
+  max-width: 600px;
+}
+.img-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.holly-image {
+  border-radius: 6px;
 }
