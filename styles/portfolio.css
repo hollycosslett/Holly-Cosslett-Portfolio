@@ -13,6 +13,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 ul,
 p,
 .btn-main,
@@ -41,9 +42,11 @@ li {
   list-style: none;
   margin-left: 12px;
 }
-nav a {
+nav a,
+footer a {
   text-decoration: none;
   color: var(--secondary-color);
+  transition: all 150ms ease-in-out;
 }
 
 ul a:hover {
@@ -86,6 +89,7 @@ a {
   padding: 15px;
   border-radius: 4px;
   margin-top: 60px;
+  transition: all 150ms ease-in-out;
 }
 
 .btn-main:hover {
@@ -119,6 +123,7 @@ a {
   padding: 16px 12px;
   font-size: 16px;
   border-radius: 4px;
+  transition: all 150ms ease-in-out;
 }
 
 .coding-btn-project:hover {
@@ -127,6 +132,24 @@ a {
 
 i {
   font-size: 50px;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 40px;
+}
+
+.social-links i {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+.social-links i:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 @media (max-width: 992px) {
   .about-container {
