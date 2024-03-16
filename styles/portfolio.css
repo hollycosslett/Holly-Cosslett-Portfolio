@@ -14,8 +14,8 @@ body {
 h1,
 h2,
 p,
-.btn-branding,
-.btn-project {
+.btn-main,
+.coding-btn-project {
   font-family: var(--text-font);
   font-weight: 400;
 }
@@ -38,7 +38,7 @@ a {
   margin: 20px 0;
 }
 
-.btn-branding {
+.btn-main {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 15px;
@@ -46,49 +46,19 @@ a {
   margin-top: 60px;
 }
 
-.btn-branding:hover {
+.btn-main:hover {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
-
-.coding-header {
-  text-align: center;
-  padding: 100px;
-}
-.coding-h1 {
-  color: var(--secondary-color);
-  font-size: 66px;
-}
-.main-content-container {
-  background-color: var(--secondary-color);
-  padding: 60px;
-}
-
-.main-content-container h2 {
-  font-size: 25px;
-}
-
-.btn-project {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 16px 12px;
-  font-size: 16px;
-  border-radius: 4px;
-}
-
-.btn-project:hover {
-  border: solid 1px var(--primary-color);
-}
-
-.about-container {
+.about-container,
+.contact-container {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 120px 150px;
-  text-align: left;
-  max-width: 450;
 }
 
-.about-container h1 {
+.about-container h1,
+.contact-container h1 {
   font-size: 64px;
   line-height: 80px;
 }
@@ -111,6 +81,35 @@ a {
 .holly-image {
   border-radius: 6px;
 }
+.coding-header {
+  text-align: center;
+  padding: 100px;
+}
+.coding-header h1 {
+  color: var(--secondary-color);
+  font-size: 66px;
+}
+.coding-content-container {
+  background-color: var(--secondary-color);
+  padding: 60px;
+}
+
+.coding-content-container h2 {
+  font-size: 25px;
+}
+
+.coding-btn-project {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 16px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.coding-btn-project:hover {
+  border: solid 1px var(--primary-color);
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 60px;
@@ -118,10 +117,10 @@ a {
   h2 {
     font-size: 32px;
   }
-  .main-content-container {
+  .coding-content-container {
     padding: 60px;
   }
-  .btn-project {
+  .coding-btn-project {
     display: block;
     text-align: center;
   }
@@ -134,6 +133,9 @@ a {
       text-align: center;
       padding: 60px;
       margin: 0 auto;
+    }
+    .about-container h1 {
+      text-align: center;
     }
     .img-container {
       display: block;
