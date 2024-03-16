@@ -6,9 +6,10 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--text-color);
   font-family: var(--text-font);
+  font-weight: 400;
 }
 
 h1,
@@ -19,7 +20,18 @@ p,
   font-family: var(--text-font);
   font-weight: 400;
 }
+.top-section {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 100px;
+}
+.top-section h1 {
+  color: var(--secondary-color);
+  font-size: 66px;
+}
+
 .hero {
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
   max-width: 100%;
@@ -50,18 +62,6 @@ a {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
-.about-container,
-.contact-container {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 120px 150px;
-}
-
-.about-container h1,
-.contact-container h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
 
 .about-container h2 {
   font-size: 27px;
@@ -78,23 +78,10 @@ a {
   margin: 0 auto;
   margin-top: 20px;
 }
-.holly-image {
-  border-radius: 6px;
+.holly-img {
+  height: 400px;
 }
-.coding-header {
-  text-align: center;
-  padding: 100px;
-}
-.coding-header h1 {
-  color: var(--secondary-color);
-  font-size: 66px;
-}
-.coding-content-container {
-  background-color: var(--secondary-color);
-  padding: 60px;
-}
-
-.coding-content-container h2 {
+.coding-container h2 {
   font-size: 25px;
 }
 
@@ -110,6 +97,17 @@ a {
   border: solid 1px var(--primary-color);
 }
 
+@media (max-width: 992px) {
+  .about-container {
+    text-align: center;
+  }
+  .img-container {
+    display: block;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 60px;
@@ -117,30 +115,12 @@ a {
   h2 {
     font-size: 32px;
   }
-  .coding-content-container {
-    padding: 60px;
-  }
+
   .coding-btn-project {
     display: block;
     text-align: center;
   }
   .coding-image-spacing {
     margin-top: 50px;
-  }
-
-  @media (max-width: 992px) {
-    .about-container {
-      text-align: center;
-      padding: 60px;
-      margin: 0 auto;
-    }
-    .about-container h1 {
-      text-align: center;
-    }
-    .img-container {
-      display: block;
-      margin-top: 30px;
-      max-width: 100%;
-    }
   }
 }
