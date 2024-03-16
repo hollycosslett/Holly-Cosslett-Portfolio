@@ -25,7 +25,10 @@ p,
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
 nav {
   padding: 15px;
 }
