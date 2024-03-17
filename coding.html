@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <meta
+      name="description"
+      content="Browse projects that Holly has coded. Holly is a front-end developer based in London"
+    /><link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -25,14 +28,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/portfolio.css" />
-    <title>Coding - Front-end Developer</title>
+    <title> Projects - Holly Cosslett</title>
   </head>
   <body>
     <header>
       <div class="nav-container">
         <nav class="d-flex justify-content-between">
           <h3 class="p-2 d-none d-sm-block">
-            <a href="index.html">Holly Cosslett</a>
+            <a href="index.html" title="Homepage">Holly Cosslett</a>
           </h3>
           <h3 class="p-2 d-block d-sm-none">HC</h3>
           <ul class="p-2 mt-1 me-3">
@@ -49,40 +52,35 @@
       </div>
     </header>
     <main>
-      <div id="projects" class="coding-container container text-center mt-5">
+      <div id="projects" class="coding-container container text-center">
         <div class="row">
           <div class="col-md-4">
-            <img src="media/weather-app.jpg" class="img-fluid p-1 shadow-sm" />
+            <img src="media/weather-app.jpg" alt="Weather app preview"class="img-fluid p-1 shadow-sm" />
             <h2 class="mt-5">Weather App</h2>
-            <a href="" class="btn coding-btn-project mt-4">View Project</a>
+            <a href="https://weather-application-shecodes.netlify.app/" target="_blank"class="btn coding-btn-project mt-4">View Project</a>
           </div>
           <div class="col-md-4">
             <img
-              src="media/quote-generator.jpg"
+              src="media/quote-generator.jpg" alt="Quote Generator preview"
               class="img-fluid p-1 shadow-sm coding-image-spacing"
             />
             <h2 class="mt-5">Quote Generator</h2>
-            <a href="" class="btn coding-btn-project mt-4">View Project</a>
+            <a href="https://quote-generator-shecodes.netlify.app/" target="_blank" class="btn coding-btn-project mt-4">View Project</a>
           </div>
           <div class="col-md-4">
             <img
-              src="media/world-clock.jpg"
+              src="media/world-clock.jpg" alt="World Clock app preview"
               class="img-fluid p-1 shadow-sm coding-image-spacing"
             />
             <h2 class="mt-5">World Clock</h2>
-            <a href="" class="btn coding-btn-project mt-4">View Project</a>
+            <a href="https://js-world-clock-shecodes-project.netlify.app/" class="btn coding-btn-project mt-4">View Project</a>
           </div>
         </div>
       </div>
     </main>
     <footer>
       <div class="contact-box p-2 text-center">
-        <div>
-          <h4 class="mt-3">Work inquiry</h4>
-        </div>
-        <div>
-          <a href="contact.html" class="btn btn-main mt-4">Contact me</a>
-        </div>
+          <a href="contact.html" class="btn btn-main mt-4" title="Contact Holly">Contact me</a>
       </div>
       <div class="container d-flex justify-content-center mt-2">
         <div class="social-links">
@@ -91,11 +89,19 @@
           ></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://github.com/hollycosslett" target="blank"
+          <a
+            href="https://github.com/hollycosslett"
+            title="Github Profile"
+            target="blank"
             ><i class="fa-brands fa-square-github"></i
           ></a>
         </div>
       </div>
-    </footer>
+      <p class="text-center mt-4 p-2">
+        This project was coded by Holly Cosslett and is
+        <a href="https://github.com/hollycosslett/Holly-Cosslett-Portfolio" target="_blank"
+          >open-sourced</a
+        >.
+      </p>
   </body>
 </html>

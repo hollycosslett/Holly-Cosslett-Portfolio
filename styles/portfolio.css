@@ -33,6 +33,9 @@ header {
 nav {
   padding: 15px;
 }
+nav h3 {
+  font-size: 22px;
+}
 ul {
   padding: 0;
 }
@@ -55,12 +58,15 @@ ul a:hover {
 
 .top-section {
   background-color: var(--primary-color);
-  padding: 100px;
+  padding: 50px;
   text-align: center;
 }
 .top-section h1 {
   color: var(--secondary-color);
   font-size: 66px;
+}
+main {
+  margin: 30px 0 100px 0;
 }
 
 .hero {
@@ -98,12 +104,12 @@ a {
 }
 
 .about-container h2 {
-  font-size: 27px;
+  font-size: 28px;
   line-height: 60px;
 }
 
 .about-container p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
 }
 
@@ -112,7 +118,9 @@ a {
   margin: 0 auto;
   margin-top: 20px;
 }
-
+.coding-container {
+  margin-top: 100px;
+}
 .coding-container h2 {
   font-size: 25px;
 }
@@ -130,6 +138,13 @@ a {
   border: solid 1px var(--primary-color);
 }
 
+.contact-container {
+  padding: 40px 0;
+}
+.contact-container a {
+  text-decoration: none;
+  color: var(--text-font);
+}
 i {
   font-size: 50px;
 }
@@ -138,12 +153,15 @@ footer {
   color: var(--secondary-color);
   padding: 40px;
 }
+footer a {
+  text-decoration: underline;
+}
 
 .social-links i {
-  font-size: 15px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 12px;
   border-radius: 4px;
-  margin: 10px;
+  margin: 15px 10px;
   transition: all 150ms ease-in-out;
 }
 
@@ -151,14 +169,20 @@ footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+footer p {
+  font-size: 15px;
+}
 @media (max-width: 992px) {
   .about-container {
     text-align: center;
   }
+  .about-container h2 {
+    margin: none;
+  }
   .img-container {
     display: block;
     margin-top: 30px;
-    max-width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find out information about Holly Cosslett. Holly is a front-end developer based in London"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,14 +29,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/portfolio.css" />
-    <title>Holly Cosslett - Front-end Developer</title>
+    <title>About Holly Cosslett</title>
   </head>
   <body>
     <header>
       <div class="nav-container">
         <nav class="d-flex justify-content-between">
           <h3 class="p-2 d-none d-sm-block">
-            <a href="index.html">Holly Cosslett</a>
+            <a href="index.html" title="Homepage">Holly Cosslett</a>
           </h3>
           <h3 class="p-2 d-block d-sm-none">HC</h3>
           <ul class="p-2 mt-1 me-3">
@@ -49,21 +53,27 @@
       </div>
     </header>
     <main>
-      <div class="about-container container p-5">
+      <div class="about-container container p-3">
         <div class="row p-3">
-          <div class="col-lg-6">
-            <h2 class="mt-5 ms-4">Front-end Developer based in London</h2>
-            <p class="ms-4">
-              For anyone who wants to start learning code, this workshop is very
-              interesting. You will be challenged with different exercises, and
-              everything is well explained, homework and deadlines are good for
-              keep focus
+          <div class="col-lg-6 ps-3 pe-3">
+            <h2 class="mt-5">Front-end Developer based in London</h2>
+            <p>
+              I am currently seeking new opportunities in front-end development
+              in and around London. I am open to work remotely and have flexible
+              hours.
+              <br />
+              <br />I started my coding journey last year with Shecodes and have
+              enjoyed every aspect of learning and refining new skills. I have a
+              Bachelors Degree in Primary Education (2017) and worked worked as
+              a Primary School Teacher for 6 years.
             </p>
+            <a href="" class="btn coding-btn-project mt-4">View Projects</a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 ps-3 pe-3">
             <div class="img-container text-center">
               <img
                 src="media/holly.jpg"
+                alt="Picture of Holly"
                 class="img-fluid p-2 border-2 rounded shadow holly-img"
               />
             </div>
@@ -73,12 +83,9 @@
     </main>
     <footer>
       <div class="contact-box p-2 text-center">
-        <div>
-          <h4 class="mt-3">Work inquiry</h4>
-        </div>
-        <div>
-          <a href="contact.html" class="btn btn-main mt-4">Contact me</a>
-        </div>
+        <a href="contact.html" class="btn btn-main mt-4" title="Contact Holly"
+          >Contact me</a
+        >
       </div>
       <div class="container d-flex justify-content-center mt-2">
         <div class="social-links">
@@ -87,11 +94,20 @@
           ></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://github.com/hollycosslett" target="blank"
+          <a
+            href="https://github.com/hollycosslett"
+            title="Github Profile"
+            target="blank"
             ><i class="fa-brands fa-square-github"></i
           ></a>
         </div>
       </div>
+      <p class="text-center mt-4 p-2">
+        This project was coded by Holly Cosslett and is
+        <a href="https://github.com/hollycosslett/Holly-Cosslett-Portfolio"
+          >open-sourced</a
+        >.
+      </p>
     </footer>
   </body>
 </html>
