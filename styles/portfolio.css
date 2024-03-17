@@ -113,6 +113,15 @@ a {
   line-height: 30px;
 }
 
+.shecodes-link {
+  color: rgba(37, 37, 39, 0.623);
+  text-decoration: none;
+  font-weight: bold;
+}
+.shecodes-link:hover {
+  text-decoration: underline;
+}
+
 .img-container {
   display: block;
   margin: 0 auto;
