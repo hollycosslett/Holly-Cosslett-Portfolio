@@ -1,12 +1,12 @@
 :root {
-  --primary-color: rgb(62, 63, 66);
-  --secondary-color: rgb(255, 255, 255);
+  --primary-color: #313136;
+  --secondary-color: #e1e1d9;
   --text-font: "Raleway", sans-serif;
-  --text-color: rgba(37, 37, 39, 0.806);
+  --text-color: var(--secondary-color);
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
 }
 
@@ -19,7 +19,7 @@ p,
 .btn-main,
 .coding-btn-project {
   font-family: var(--text-font);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .index-body {
@@ -127,6 +127,7 @@ a {
   margin: 0 auto;
   margin-top: 20px;
 }
+
 .coding-container {
   margin-top: 100px;
 }
@@ -135,16 +136,19 @@ a {
 }
 
 .coding-btn-project {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 16px 12px;
   font-size: 16px;
   border-radius: 4px;
   transition: all 150ms ease-in-out;
 }
-
+.coding-container img {
+  filter: brightness(0.8);
+  border-radius: 10px;
+}
 .coding-btn-project:hover {
-  border: solid 1px var(--primary-color);
+  border: solid 1px var(--secondary-color);
 }
 
 .contact-container {
