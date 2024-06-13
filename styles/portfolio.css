@@ -176,6 +176,11 @@ a {
 .coding-btn-project:hover {
   border: solid 2px var(--secondary-color);
 }
+
+.btn-margin {
+  margin-right: 10px;
+}
+
 .grid-container {
   margin-top: 60px;
   display: flex;
@@ -259,6 +264,7 @@ footer p {
       margin-top: 50px;
     }
     .coding-btn-project {
+      margin: 0;
       display: block;
 
       text-align: center;
