@@ -129,9 +129,9 @@ a {
 }
 
 .shecodes-link {
-  color: var(--tertiary-color);
+  color: rgb(157, 137, 108);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 .shecodes-link:hover {
   text-decoration: underline;
@@ -213,11 +213,14 @@ a {
 .contact-container {
   padding: 40px 0;
 }
-.contact-container a,
-.contact-container i,
-.contact-container h3 {
+.contact-container p,
+.contact-container i {
   text-decoration: none;
   color: var(--tertiary-color);
+}
+.contact-container a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 i {
   font-size: 50px;
