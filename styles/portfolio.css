@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3d3e42;
-  --secondary-color: #e1e1d9;
-  --tertiary-color: #6f706e;
+  --secondary-color: #b7b7b3;
+  --tertiary-color: #c4c5be;
   --text-font: "Poppins", sans-serif;
   --text-color: rgba(37, 37, 39, 0.806);
 }
@@ -65,12 +65,11 @@ ul a:hover {
 }
 
 .top-section {
-  background-color: var(--primary-color);
   padding: 50px 60px;
   text-align: center;
 }
 .top-section h1 {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-size: 66px;
 }
 main {
@@ -87,7 +86,7 @@ main {
 .hero h1 {
   font-size: 70px;
   margin: 40px 0 20px 0;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 .hero h2 {
@@ -139,6 +138,7 @@ a {
   max-height: 600px;
   max-width: 500px;
   border-radius: 5px;
+  filter: brightness(0.6);
 }
 .coding-container {
   margin-top: 100px;
@@ -194,8 +194,8 @@ a {
   margin-top: 10px;
 }
 .skills-btn {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: auto;
   text-align: center;
   padding: 20px;
   background-color: var(--primary-color);
@@ -224,6 +224,7 @@ i {
   font-size: 50px;
 }
 .project-img {
+  filter: brightness(0.7);
 }
 footer {
   background-color: var(--primary-color);
