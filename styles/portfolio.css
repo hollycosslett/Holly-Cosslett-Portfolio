@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #34353a;
+  --primary-color: #3d3e42;
   --secondary-color: #e1e1d9;
   --tertiary-color: #6f706e;
   --text-font: "Poppins", sans-serif;
@@ -29,12 +29,7 @@ h1 {
   font-weight: 500;
 }
 
-.index-body {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
 header {
-  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 nav {
@@ -157,6 +152,9 @@ a {
   border: 1px solid var(--text-color);
   filter: brightness(0.7);
 }
+.coding-container img:hover {
+  transform: scale(1.04);
+}
 .coding-container h6 {
   font-size: 12px;
   margin-top: 20px;
@@ -224,6 +222,8 @@ a {
 }
 i {
   font-size: 50px;
+}
+.project-img {
 }
 footer {
   background-color: var(--primary-color);
