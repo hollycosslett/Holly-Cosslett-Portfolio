@@ -20,14 +20,11 @@ h6,
 ul,
 p,
 .btn-main,
-.btn-project {
+.btn-project,
+.technology-icon {
   font-family: var(--text-font);
   font-weight: 300;
   letter-spacing: 1px;
-}
-
-h1 {
-  font-weight: 500;
 }
 
 header {
@@ -71,7 +68,7 @@ ul a:hover {
 }
 .top-section h1 {
   color: var(--secondary-color);
-  font-size: 66px;
+  font-size: 60px;
   font-weight: 300;
 }
 
@@ -186,6 +183,8 @@ i {
   font-size: 50px;
 }
 .project-img {
+  width: 480px;
+  height: auto;
   filter: brightness(0.7);
 }
 .project-info h2 {
@@ -197,9 +196,56 @@ i {
 .project-info h4 {
   font-size: 28px;
 }
-.project-info li {
-  margin-bottom: 10px;
-  font-size: 18px;
+
+.technology-icon {
+  color: var(--text-color);
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 22px;
+  margin: 0 5px 10px 0;
+}
+.vscode {
+  background-color: #697069;
+  border-color: #697069;
+}
+
+.git {
+  background-color: #708d95;
+  border-color: #708d95;
+}
+.seo {
+  background-color: rgb(121, 96, 96);
+  border-color: rgb(121, 96, 96);
+}
+.hosting {
+  background-color: rgb(166, 146, 109);
+  border-color: rgb(166, 146, 109);
+}
+.api {
+  background-color: rgb(154, 154, 114);
+  border-color: rgb(154, 154, 114);
+}
+.ai {
+  background-color: rgb(112, 112, 112);
+  border-color: rgb(112, 112, 112);
+}
+.github {
+  background-color: rgb(154, 132, 137);
+  border-color: rgb(154, 132, 137);
+}
+.bootstrap {
+  background-color: rgb(173, 173, 170);
+  border-color: rgb(173, 173, 170);
+}
+.figma {
+  background-color: #69626e;
+  border-color: #69626e;
+}
+.responsive {
+  background-color: #93acc0;
+  border-color: #93acc0;
 }
 footer {
   background-color: var(--primary-color);
@@ -240,9 +286,6 @@ footer p {
       margin-top: 50px;
     }
     .btn-project {
-      margin: 0;
-      display: block;
-
       text-align: center;
     }
   }
