@@ -14,8 +14,6 @@ body {
 h1,
 h2,
 h3,
-h4,
-h6,
 ul,
 p,
 a,
@@ -51,10 +49,11 @@ i,
 .nav-container a,
 footer a {
   text-decoration: none;
-  transition: all 150ms ease-in-out;
 }
-.nav-container a:hover {
+.nav-container a:hover,
+footer a:hover {
   text-decoration: underline;
+  transition: all 150ms ease-in-out;
 }
 
 .hero {
@@ -65,7 +64,7 @@ footer a {
 .hero h1 {
   text-transform: uppercase;
   font-size: 70px;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 25px 0;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -75,10 +74,6 @@ footer a {
   letter-spacing: 3px;
 }
 
-.hero a {
-  margin: 20px 0;
-}
-
 .btn-main {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -86,7 +81,7 @@ footer a {
   padding: 15px;
   border-radius: 4px;
   border: 2px solid var(--secondary-color);
-  margin-top: 60px;
+  margin-top: 65px;
   transition: all 150ms ease-in-out;
 }
 
@@ -117,6 +112,7 @@ footer a {
 
 .top-section {
   padding: 50px 60px;
+  margin-top: 20px;
   text-align: center;
 }
 .top-section h1 {
@@ -187,19 +183,27 @@ footer a {
   font-size: 50px;
 }
 
+.project-container {
+  margin-top: 50px;
+}
+
 .project-container .project-img {
   width: 480px;
   height: auto;
   filter: brightness(0.7);
 }
-.project-container .project-info h2 {
-  font-size: 38px;
+
+.project-container .project-info h3 {
+  font-size: 28px;
+  margin-top: 5px;
 }
 .project-container .project-info p {
-  font-size: 18px;
+  font-size: 17px;
+  margin-bottom: 30px;
 }
-.project-container .project-info h4 {
-  font-size: 28px;
+
+.project-container .technologies {
+  margin-top: 20px;
 }
 .project-container .technology-icon {
   color: rgba(37, 37, 39, 0.806);
@@ -208,7 +212,7 @@ footer a {
   border-radius: 5px;
   font-size: 14px;
   padding: 22px;
-  margin: 0 5px 10px 0;
+  margin: 0 1px 4px 0;
 }
 
 /*Colours for 'Skill Boxes' on project pages*/
@@ -258,12 +262,11 @@ footer a {
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  margin-top: 30px;
-  padding-bottom: 0;
-  padding: 40px;
+  margin-top: 100px;
+  padding: 40px 0 0 0;
 }
 footer a {
-  text-decoration: underline;
+  font-weight: 600;
 }
 footer .social-links i {
   font-size: 20px;
@@ -279,21 +282,29 @@ footer .social-links i:hover {
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 @media (max-width: 992px) {
-  .about-container {
+  .btn-second {
+    text-align: center;
+  }
+  .about-container,
+  .project-container {
     text-align: center;
   }
   .about-container h2 {
     margin: none;
   }
-  .img-container {
-    margin-top: 0;
+  .about-container .img-container {
+    margin-top: 40px;
   }
-  .btn-project {
-    text-align: center;
+
+  .project-container .project-info h3 {
+    margin-top: 40px;
+  }
+  .project-container .technology-icon {
+    font-size: 12px;
   }
 }
 
@@ -329,19 +340,18 @@ footer p {
   .btn-main {
     font-size: 10px;
   }
-  .btn-project {
+  .btn-second {
     font-size: 10px;
   }
-  .about-container p {
+  .about-container p,
+  .project-container p {
     font-size: 14px;
   }
   .about-container h2 {
     font-size: 20px;
   }
-  .about-container h4 {
-    font-size: 18px;
-  }
-  .technology-icon {
+
+  .project-container .technology-icon {
     font-size: 12px;
     padding: 12px;
     margin: 0 3px 8px 0;
