@@ -145,8 +145,6 @@ footer a:hover {
   justify-content: center;
 }
 .about-container .holly-img {
-  max-height: 600px;
-  max-width: 500px;
   border-radius: 5px;
   filter: brightness(0.6);
 }
@@ -285,12 +283,31 @@ footer p {
   font-size: 14px;
 }
 
+@media (min-width: 1200px) {
+  .about-container {
+    padding: 0;
+  }
+  .about-container .holly-img {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-container h2 {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+  .about-container p {
+    font-size: 14px;
+  }
+}
 @media (max-width: 992px) {
   .btn-second {
     text-align: center;
   }
   .about-container,
   .project-container {
+    padding: 10px;
     text-align: center;
   }
   .about-container h2 {
@@ -332,7 +349,7 @@ footer p {
     font-size: 30px;
   }
   .hero h2 {
-    font-size: 22px;
+    font-size: 16px;
   }
   .top-section h1 {
     font-size: 30px;
@@ -355,5 +372,8 @@ footer p {
     font-size: 12px;
     padding: 12px;
     margin: 0 3px 8px 0;
+  }
+  footer p {
+    font-size: 9px;
   }
 }
