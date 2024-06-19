@@ -2,7 +2,6 @@
   --primary-color: #3d3e42;
   --secondary-color: #c4c5be;
   --text-font: "Poppins", sans-serif;
-  --text-color: rgba(37, 37, 39, 0.806);
 }
 * {
   box-sizing: border-box;
@@ -19,77 +18,64 @@ h4,
 h6,
 ul,
 p,
+a,
+i,
 .btn-main,
-.btn-project,
+.btn-second,
 .technology-icon {
+  color: var(--secondary-color);
   font-family: var(--text-font);
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-header {
-  color: var(--secondary-color);
-}
-nav {
+.nav-container {
   padding: 15px;
 }
-nav h3 a {
+.nav-container h3 a {
   border: 1px solid var(--secondary-color);
   padding: 12px;
   border-radius: 4px;
   font-size: 18px;
-  color: var(--secondary-color);
   font-weight: 500;
   letter-spacing: 2px;
 }
 .nav-container ul {
   padding: 10px;
 }
-
 .nav-container li {
   display: inline;
   list-style: none;
   margin-left: 12px;
 }
-nav a,
+.nav-container a,
 footer a {
   text-decoration: none;
-  color: var(--secondary-color);
   transition: all 150ms ease-in-out;
 }
-
-ul a:hover {
+.nav-container a:hover {
   text-decoration: underline;
 }
 
-.top-section {
-  padding: 50px 60px;
-  text-align: center;
-}
-.top-section h1 {
-  color: var(--secondary-color);
-  font-size: 60px;
-  font-weight: 300;
-}
-
 .hero {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   text-align: center;
   max-width: 100%;
   padding: 100px 60px;
 }
 .hero h1 {
+  text-transform: uppercase;
   font-size: 70px;
   margin: 40px 0 20px 0;
-  color: var(--secondary-color);
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .hero h2 {
   font-size: 30px;
+  letter-spacing: 3px;
 }
 
-a {
+.hero a {
   margin: 20px 0;
 }
 
@@ -109,47 +95,7 @@ a {
   color: var(--secondary-color);
 }
 
-.about-container h2 {
-  font-size: 28px;
-  line-height: 60px;
-}
-
-.about-container p {
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.shecodes-link {
-  text-decoration: none;
-  font-weight: 800;
-  color: var(--secondary-color);
-}
-.shecodes-link:hover {
-  text-decoration: underline;
-}
-.img-container {
-  display: flex;
-  justify-content: center;
-}
-.holly-img {
-  max-height: 600px;
-  max-width: 500px;
-  border-radius: 5px;
-  filter: brightness(0.6);
-}
-.coding-container {
-  margin-top: 100px;
-}
-.coding-container img {
-  border-radius: 4px;
-  border: 1px solid var(--text-color);
-  filter: brightness(0.7);
-}
-.coding-container img:hover {
-  transform: scale(1.04);
-}
-
-.btn-project {
+.btn-second {
   background-color: var(--primary-color);
   border: solid 2px var(--secondary-color);
   color: var(--secondary-color);
@@ -159,7 +105,7 @@ a {
   transition: all 150ms ease-in-out;
 }
 
-.btn-project:hover {
+.btn-second:hover {
   border: solid 2px var(--primary-color);
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -168,13 +114,66 @@ a {
 .btn-margin {
   margin-right: 10px;
 }
+
+.top-section {
+  padding: 50px 60px;
+  text-align: center;
+}
+.top-section h1 {
+  color: var(--secondary-color);
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.about-container h2,
+.project-container h2 {
+  font-size: 28px;
+  line-height: 60px;
+}
+.about-container p,
+.project-container p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.about-container .shecodes-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.about-container .shecodes-link:hover {
+  text-decoration: underline;
+}
+.about-container .img-container,
+.project-container .img-container {
+  display: flex;
+  justify-content: center;
+}
+.about-container .holly-img {
+  max-height: 600px;
+  max-width: 500px;
+  border-radius: 5px;
+  filter: brightness(0.6);
+}
+
+.coding-container {
+  margin-top: 100px;
+}
+.coding-container img {
+  border-radius: 4px;
+  border: 1px solid rgba(37, 37, 39, 0.806);
+  filter: brightness(0.7);
+}
+.coding-container img:hover {
+  transform: scale(1.04);
+}
+
 .contact-container {
   padding: 40px 0;
 }
 .contact-container p,
 .contact-container i {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 .contact-container p {
   margin-top: 20px;
@@ -184,26 +183,26 @@ a {
   color: var(--secondary-color);
   text-decoration: none;
 }
-i {
+.contact-container i {
   font-size: 50px;
 }
-.project-img {
+
+.project-container .project-img {
   width: 480px;
   height: auto;
   filter: brightness(0.7);
 }
-.project-info h2 {
+.project-container .project-info h2 {
   font-size: 38px;
 }
-.project-info p {
+.project-container .project-info p {
   font-size: 18px;
 }
-.project-info h4 {
+.project-container .project-info h4 {
   font-size: 28px;
 }
-
-.technology-icon {
-  color: var(--text-color);
+.project-container .technology-icon {
+  color: rgba(37, 37, 39, 0.806);
   display: inline-block;
   border: 1px solid;
   border-radius: 5px;
@@ -211,6 +210,8 @@ i {
   padding: 22px;
   margin: 0 5px 10px 0;
 }
+
+/*Colours for 'Skill Boxes' on project pages*/
 .vscode {
   background-color: #697069;
   border-color: #697069;
@@ -252,16 +253,19 @@ i {
   background-color: #93acc0;
   border-color: #93acc0;
 }
+/*END*/
+
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  margin-top: 30px;
+  padding-bottom: 0;
   padding: 40px;
 }
 footer a {
   text-decoration: underline;
 }
-
-.social-links i {
+footer .social-links i {
   font-size: 20px;
   padding: 12px;
   border-radius: 4px;
@@ -269,36 +273,30 @@ footer a {
   transition: all 150ms ease-in-out;
 }
 
-.social-links i:hover {
+footer .social-links i:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-footer {
-  margin-top: 30px;
-  padding-bottom: 0;
-}
+
 footer p {
   font-size: 15px;
 }
-@media (max-width: 1000px) {
-  .coding-container h2 {
-    font-size: 18px;
+
+@media (max-width: 992px) {
+  .about-container {
+    text-align: center;
   }
-  @media (max-width: 992px) {
-    .about-container {
-      text-align: center;
-    }
-    .about-container h2 {
-      margin: none;
-    }
-    .img-container {
-      margin-top: 0;
-    }
-    .btn-project {
-      text-align: center;
-    }
+  .about-container h2 {
+    margin: none;
+  }
+  .img-container {
+    margin-top: 0;
+  }
+  .btn-project {
+    text-align: center;
   }
 }
+
 @media (max-width: 767px) {
   .coding-container h1 {
     font-size: 60px;
