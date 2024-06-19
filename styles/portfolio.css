@@ -43,7 +43,7 @@ nav h3 a {
   letter-spacing: 2px;
 }
 .nav-container ul {
-  padding: 0;
+  padding: 10px;
 }
 
 .nav-container li {
@@ -96,6 +96,7 @@ a {
 .btn-main {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  font-size: 15px;
   padding: 15px;
   border-radius: 4px;
   border: 2px solid var(--secondary-color);
@@ -174,6 +175,10 @@ a {
 .contact-container i {
   text-decoration: none;
   color: var(--tertiary-color);
+}
+.contact-container p {
+  margin-top: 20px;
+  font-size: 12px;
 }
 .contact-container a {
   color: var(--secondary-color);
@@ -268,6 +273,10 @@ footer a {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+footer {
+  margin-top: 30px;
+  padding-bottom: 0;
+}
 footer p {
   font-size: 15px;
 }
@@ -283,7 +292,7 @@ footer p {
       margin: none;
     }
     .img-container {
-      margin-top: 50px;
+      margin-top: 0;
     }
     .btn-project {
       text-align: center;
@@ -302,11 +311,41 @@ footer p {
     margin-top: 50px;
   }
 }
-@media (max-width: 400px) {
-  ul {
+@media (max-width: 500px) {
+  .nav-container ul {
+    padding-right: 0;
     font-size: 12px;
   }
+  .nav-container li {
+    margin-left: 3px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero h2 {
+    font-size: 22px;
+  }
   .top-section h1 {
-    font-size: 45px;
+    font-size: 30px;
+  }
+  .btn-main {
+    font-size: 10px;
+  }
+  .btn-project {
+    font-size: 10px;
+  }
+  .about-container p {
+    font-size: 14px;
+  }
+  .about-container h2 {
+    font-size: 20px;
+  }
+  .about-container h4 {
+    font-size: 18px;
+  }
+  .technology-icon {
+    font-size: 12px;
+    padding: 12px;
+    margin: 0 3px 8px 0;
   }
 }
