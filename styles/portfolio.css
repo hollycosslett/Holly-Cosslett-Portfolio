@@ -163,6 +163,12 @@ footer a:hover {
 .contact-container {
   padding: 40px 0;
 }
+.contact-container i {
+  font-size: 40px;
+}
+.contact-container h3 {
+  font-size: 24px;
+}
 .contact-container p,
 .contact-container i {
   text-decoration: none;
@@ -170,14 +176,11 @@ footer a:hover {
 }
 .contact-container p {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .contact-container a {
   color: var(--secondary-color);
   text-decoration: none;
-}
-.contact-container i {
-  font-size: 50px;
 }
 
 .project-container {
@@ -279,7 +282,7 @@ footer .social-links i:hover {
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media (min-width: 1200px) {
