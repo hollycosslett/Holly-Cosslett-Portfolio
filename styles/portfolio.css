@@ -188,8 +188,6 @@ footer a:hover {
 }
 
 .project-container .project-img {
-  width: 480px;
-  height: auto;
   filter: brightness(0.7);
 }
 
@@ -285,6 +283,15 @@ footer p {
   font-size: 12px;
 }
 
+@media (max-width: 1400px) {
+  .project-container .project-info p {
+    font-size: 15px;
+  }
+  .project-container .project-info h3 {
+    margin-top: 5px;
+  }
+}
+
 @media (min-width: 1200px) {
   .about-container {
     padding: 0;
@@ -301,6 +308,9 @@ footer p {
   }
   .about-container p {
     font-size: 14px;
+  }
+  .project-container {
+    display: block;
   }
 }
 @media (max-width: 992px) {
