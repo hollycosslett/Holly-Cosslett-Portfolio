@@ -186,7 +186,9 @@ footer a:hover {
 .project-container {
   margin-top: 50px;
 }
-
+.project-container .alignment {
+  align-items: center;
+}
 .project-container .project-img {
   filter: brightness(0.7);
 }
@@ -197,6 +199,7 @@ footer a:hover {
 }
 .project-container .project-info p {
   font-size: 17px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -209,7 +212,7 @@ footer a:hover {
   border: 1px solid;
   border-radius: 5px;
   font-size: 14px;
-  padding: 22px;
+  padding: 20px;
   margin: 0 1px 4px 0;
 }
 
@@ -309,8 +312,17 @@ footer p {
   .about-container p {
     font-size: 14px;
   }
-  .project-container {
-    display: block;
+  .project-container .alignment {
+    align-items: flex-start;
+  }
+  .project-container .project-info h3 {
+    font-size: 18px;
+  }
+  .project-container .project-info p {
+    font-size: 14px;
+  }
+  .project-container .technology-icon {
+    font-size: 11px;
   }
 }
 @media (max-width: 992px) {
@@ -331,6 +343,7 @@ footer p {
 
   .project-container .project-info h3 {
     margin-top: 40px;
+    font-size: 22px;
   }
   .project-container .technology-icon {
     font-size: 12px;
@@ -381,7 +394,6 @@ footer p {
   }
 
   .project-container .technology-icon {
-    font-size: 12px;
     padding: 12px;
     margin: 0 3px 8px 0;
   }
