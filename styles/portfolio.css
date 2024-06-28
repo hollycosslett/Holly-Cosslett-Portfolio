@@ -343,6 +343,7 @@ footer p {
 
   .project-container .project-info h3 {
     margin-top: 40px;
+    margin-bottom: 25px;
     font-size: 22px;
   }
   .project-container .technology-icon {
@@ -387,7 +388,7 @@ footer p {
   }
   .about-container p,
   .project-container p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .about-container h2 {
     font-size: 20px;
