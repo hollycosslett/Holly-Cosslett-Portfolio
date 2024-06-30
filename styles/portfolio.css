@@ -94,6 +94,7 @@ footer a:hover {
   border: solid 2px var(--secondary-color);
   color: var(--secondary-color);
   padding: 16px 15px;
+  margin-top: 40px;
   font-size: 14px;
   border-radius: 4px;
   transition: all 150ms ease-in-out;
@@ -104,11 +105,6 @@ footer a:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
-
-.btn-margin {
-  margin-right: 10px;
-}
-
 .top-section {
   padding: 50px 60px;
   margin-top: 20px;
@@ -217,6 +213,22 @@ footer a:hover {
 }
 
 /*Colours for 'Skill Boxes' on project pages*/
+.html {
+  background-color: #575a57;
+  border-color: #575a57;
+}
+.hosting {
+  background-color: rgba(246, 161, 151, 0.471);
+  border-color: rgba(246, 161, 151, 0.471);
+}
+.javascript {
+  background-color: #656f7b;
+  border-color: #656f7b;
+}
+.react {
+  background-color: #93a2c1;
+  border-color: #93a2c1;
+}
 .vscode {
   background-color: #697069;
   border-color: #697069;
@@ -230,7 +242,7 @@ footer a:hover {
   background-color: rgb(121, 96, 96);
   border-color: rgb(121, 96, 96);
 }
-.hosting {
+.css {
   background-color: rgb(166, 146, 109);
   border-color: rgb(166, 146, 109);
 }
@@ -303,6 +315,10 @@ footer p {
     height: 500px;
     width: 500px;
   }
+  .project-container .technology-icon {
+    padding: 18px;
+    font-size: 11px;
+  }
 }
 @media (max-width: 1200px) {
   .about-container h2 {
@@ -310,20 +326,28 @@ footer p {
     margin-top: 10px;
   }
   .about-container p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .project-container .alignment {
     align-items: flex-start;
   }
   .project-container .project-info h3 {
+    margin-top: 10px;
     font-size: 18px;
   }
   .project-container .project-info p {
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 25px;
   }
   .project-container .technology-icon {
-    font-size: 11px;
+    font-size: 10px;
   }
+  .btn-second {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  /*change size of project button */
 }
 @media (max-width: 992px) {
   .btn-second {
