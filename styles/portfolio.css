@@ -145,7 +145,11 @@ footer a:hover {
 }
 
 .coding-container {
-  margin-top: 100px;
+  margin-top: 80px;
+}
+.coding-container .show-paragraph {
+  display: none;
+  font-size: 14px;
 }
 .coding-container img {
   border-radius: 4px;
@@ -347,7 +351,18 @@ footer p {
     margin-top: 15px;
     font-size: 10px;
   }
-  /*change size of project button */
+}
+
+@media (max-width: 1024px) {
+  .coding-container {
+    margin-top: 20px;
+  }
+  .coding-container .show-paragraph {
+    display: contents;
+  }
+  .coding-container p {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 992px) {
   .btn-second {
