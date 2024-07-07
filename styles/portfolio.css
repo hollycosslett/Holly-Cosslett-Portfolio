@@ -27,10 +27,10 @@ i,
   letter-spacing: 1px;
 }
 
-.nav-container {
+nav {
   padding: 15px;
 }
-.nav-container h3 a {
+nav h3 a {
   border: 1px solid var(--secondary-color);
   padding: 12px;
   border-radius: 4px;
@@ -38,19 +38,19 @@ i,
   font-weight: 500;
   letter-spacing: 2px;
 }
-.nav-container ul {
+nav ul {
   padding: 10px;
 }
-.nav-container li {
+nav li {
   display: inline;
   list-style: none;
   margin-left: 12px;
 }
-.nav-container a,
+nav a,
 footer a {
   text-decoration: none;
 }
-.nav-container a:hover,
+nav a:hover,
 footer a:hover {
   text-decoration: underline;
   transition: all 150ms ease-in-out;
