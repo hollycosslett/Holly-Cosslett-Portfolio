@@ -403,11 +403,11 @@ footer p {
   }
 }
 @media (max-width: 500px) {
-  .nav-container ul {
+  nav ul {
     padding-right: 0;
     font-size: 12px;
   }
-  .nav-container li {
+  nav li {
     margin-left: 3px;
   }
   .hero h1 {
